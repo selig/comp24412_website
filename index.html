@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <title>COMP24412: Symbolic Artificial Intelligence</title>
+  </head>
+  <body>
+    <h1> COMP24412: Symbolic Artificial Intelligence </h1>
+    This course is being delived by <a
+      href="http://www.cs.man.ac.uk/%7Eregerg/">Giles Reger</a>, Martin
+    Riener, and <a href="http://andrefreitas.org/">Andre Freitas</a>.
+    Please see <a
+href="http://studentnet.cs.manchester.ac.uk/syllabus/index.php?code=COMP24412&amp;year=2018">the
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      School syllabus page</a> for other information.
+    <h2> Aims and objectives </h2>
+    The aim of this course is to provide the conceptual and practical
+    (systems building) foundations for knowledge representation and
+    reasoning in Artificial Intelligence.
+    <p>A student completing this course unit should be able to:</p>
+    <ul>
+      <li>Describe the syntax and semantics of first-order logic and use
+        it to model problems </li>
+      <li>Apply reasoning techniques (transformation to clausal form,
+        resolution, saturation) to establish properties of first-order
+        problems </li>
+      <li>Explain the theoretical limitations of automated theorem
+        provers </li>
+      <li>Write Prolog programs to solve automated reasoning tasks and
+        explain how they will execute </li>
+      <li>Describe, differentiate and apply different knowledge
+        representation formalisms for modelling knowledge bases. </li>
+      <li>Explain how these formalisms affect the reasoning process. </li>
+      <li>Apply, demonstrate and program knowledge-based learning
+        methods. </li>
+      <li>Apply, demonstrate and program formal models for natural
+        language processing in the context of semantic parsing and
+        natural logic inference.</li>
+    </ul>
+    <h2> Structure</h2>
+    <!--
+<blockquote>
+  <h3>Automated Reasoning: 3 weeks</h3>
+  <blockquote>
+    <h3>First-Order Logic: 1 week</h3>
+    <h3>Theorem Proving: 2 weeks</h3>
+  </blockquote>
+  <h3>Prolog: 2 weeks</h3>
+  <h3>Knowlege Representation: 2 weeks</h3>
+  <h3>Knowledge in Learning: 2 weeks</h3>
+  <h3>Natural Language: 1 week</h3>
+</blockquote>
+-->
+    <p>Lecture and Lab notes and materials will be available from here.
+      As per School policy, we will not be providing hard copies of
+      notes.</p>
+    <p>The following table is the main reference for what is going on in
+      the course and will be updated frequently throughout the course as
+      further details are given.</p>
+    <p>The suggested reading will be mainly taken from Artificial
+      Intelligence: A Modern Approach (Third Edition) referenced as
+      AIAMA. It should be noted that this is suggested only and not
+      examinable (only lectured material is examinable).</p>
+    <table style="width: 100%" cellpadding="7" border="1">
+      <colgroup> <col style="width: 5%;" span="1"> <col style="width:
+          30%;" span="1"> <col style="width: 25%;" span="1"> <col
+          style="width: 30%;" span="1"> <col style="width: 10%;"
+          span="1"> </colgroup> <tbody>
+        <tr>
+          <th>week</th>
+          <th>Lectures</th>
+          <th>Suggested Reading</th>
+          <th>Labs</th>
+          <th>Quiz</th>
+        </tr>
+        <tr>
+          <th rowspan="2">1 </th>
+          <td> <a href="2018slides/lecture1.pdf">Introduction</a></td>
+          <td> Chapter 1 of AIAMA (mainly 1.1) </td>
+        </tr>
+        <tr>
+          <td> <a href="2018slides/lecture2.pdf">Modelling in Datalog</a>
+          </td>
+          <td>Sections 8.1 and 8.2 of AIAMA (although this is more
+            detail than needed) </td>
+        </tr>
+        <tr>
+          <th rowspan="2">2 </th>
+          <td> <a href="2018slides/lecture3.pdf">Reasoning in Datalog</a>
+          </td>
+          <td> Section 9.3 of AIAMA (although relies on some previous
+            sections) </td>
+        </tr>
+        <tr>
+          <td> <a href="2018slides/lecture4.pdf">Introducing Prolog</a>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">3 </th>
+          <td> <a href="2018slides/lecture5.pdf">More Prolog</a>, <a
+              href="2018slides/lecture.pl">Prolog rules from lecture</a>
+          </td>
+          <td> <br>
+          </td>
+          <td rowspan="2"><a href="2018labs/lab1.pdf">Introduction to
+              Prolog</a> </td>
+        </tr>
+        <tr>
+          <td> <a href="2018slides/lecture6.pdf">Even More Prolog</a> </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">4 </th>
+          <td> <a href="2018slides/lecture7.pdf">Revising First-Order
+              Logic</a> </td>
+          <td> <br>
+          </td>
+          <td rowspan="2"><br>
+          </td>
+          <td rowspan="2"> Prolog </td>
+        </tr>
+        <tr>
+          <td> <a href="2018slides/lecture8.pdf">Models and Resolution</a>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">5 </th>
+          <td> <a href="2018slides/lecture9.pdf">Translation to Clausal
+              Form</a>. <a href="https://vprover.github.io/">Vampire
+              website</a>. <a href="2018slides/lecture9_examples">Examples</a>.
+          </td>
+          <td> <br>
+          </td>
+          <td rowspan="2"><a href="2018labs/lab2a.pdf">More Prolog</a> </td>
+        </tr>
+        <tr>
+          <td> <a href="2018slides/lecture10.pdf">Saturation-Based
+              Proof Search</a> </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">6 </th>
+          <td> <a href="2018slides/lecture11.pdf">Making it Work</a> </td>
+          <td><br>
+          </td>
+          <td rowspan="2"><br>
+          </td>
+          <td rowspan="2"> FOL </td>
+        </tr>
+        <tr>
+          <td> <a href="2018slides/lecture12.pdf">Beyond (and Beneath)
+              FOL</a> </td>
+        </tr>
+        <tr>
+          <th rowspan="2">7</th>
+          <td> <a
+              href="http://andrefreitas.org/symbolic_ai/lecture_13.pdf">Introduction
+
+
+
+
+
+
+
+
+
+
+
+              to the Second Part</a> </td>
+          <td><br>
+          </td>
+          <td rowspan="2"><a href="2018labs/lab2b.pdf">First-Order
+              Reasoning</a> <a href="2018labs/lab2_marking.pdf">Exercise
+
+
+
+
+
+
+
+
+
+
+              2 Marking Scheme</a> </td>
+          <td rowspan="2"><br>
+          </td>
+          <td rowspan="2"><br>
+          </td>
+        </tr>
+        <tr>
+          <td> <a
+              href="http://andrefreitas.org/symbolic_ai/lecture_14.pdf">Knowledge
+
+
+
+
+
+
+
+
+
+
+
+
+              Representation</a><br>
+            (Slides 1-49)<br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">8</th>
+          <td> <a
+              href="http://andrefreitas.org/symbolic_ai/lecture_14.pdf">Description
+
+
+
+
+
+
+
+
+
+
+
+              Logics &amp; Ontologies</a><br>
+            (Slides 50-79)<br>
+          </td>
+          <td><br>
+          </td>
+          <td rowspan="2"><br>
+          </td>
+          <td rowspan="2"><br>
+          </td>
+        </tr>
+        <tr>
+          <td> <a
+              href="http://andrefreitas.org/symbolic_ai/lecture_15.pdf">Frames
+
+
+
+
+
+
+
+
+
+
+
+              &amp; Conceptual Graphs</a> </td>
+        </tr>
+        <tr>
+          <th rowspan="2">9</th>
+          <td> <a
+              href="http://andrefreitas.org/symbolic_ai/lecture_16.pdf">
+              Introduction to ILP and FOIL </a><br>
+          </td>
+          <td><br>
+          </td>
+          <td rowspan="2"><a
+href="http://andrefreitas.org/symbolic_ai/labs/Symbolic_AI_Labs%20-%20KR%20and%20ILP.pdf">KR
+
+
+
+
+
+
+              &amp; ILP Lab</a><br>
+          </td>
+          <td rowspan="2"><br>
+          </td>
+        </tr>
+        <tr>
+          <td> <a
+              href="http://andrefreitas.org/symbolic_ai/lecture_17.pdf">ILP
+
+
+
+
+
+              Getting Deeper</a> </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <th rowspan="2">10 </th>
+          <td rowspan="2"><a
+              href="http://andrefreitas.org/symbolic_ai/lecture_18.pdf">Semantic
+
+
+
+
+
+              Parsing</a><br>
+            <br>
+            <a href="http://andrefreitas.org/symbolic_ai/lecture_19.pdf">Natural
+
+
+
+
+              Language Inference</a><br>
+          </td>
+          <td rowspan="2"> <br>
+          </td>
+          <td rowspan="2"> <br>
+          </td>
+          <td rowspan="2">KR &amp; ILP </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <th rowspan="2">11 </th>
+          <td rowspan="3"><a
+              href="http://andrefreitas.org/symbolic_ai/lecture_20.pdf">Neuro-Symbolic
+
+              Models</a><br>
+          </td>
+          <td rowspan="3"> <br>
+          </td>
+          <td rowspan="2"><a
+href="http://andrefreitas.org/symbolic_ai/labs/Symbolic_AI_Labs%20-%20Parsing.pdf">Syntactic
+
+
+              &amp; Semantic Parsing</a><br>
+          </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <th rowspan="2">12 </th>
+          <td rowspan="2"><a
+href="http://syllabus.cs.manchester.ac.uk/ugt/2018/COMP24412/24412-mock-questions.pdf">Mock
+              Questions (Part 1)</a> <a href="http://syllabus.cs.manchester.ac.uk/ugt/2018/COMP24412/24412-mock-ms.pdf">Mock Marking Scheme (Part 1)</a> <a href="http://andrefreitas.org/symbolic_ai/example_questions_part_2.pdf">Mock Questions (Part 2)</a><br>
+          </td>
+          <td rowspan="2"><br>
+          </td>
+        </tr>
+        <tr>
+          <td> <a
+              href="http://andrefreitas.org/symbolic_ai/revision_part_1.pdf">Revision
+              Part 1</a><br>
+            <br>
+            <a
+              href="http://andrefreitas.org/symbolic_ai/revision_part_2.pdf">Revision
+              Part 2</a><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2> Reading </h2>
+    <lu>
+      <!--<li> Patrick Blackburn &amp; Johan Bos: <a href="http://www.coli.uni-saarland.de/publikationen/softcopies/Blackburn:1997:RIN.pdf">
+Representation and Inference for Natural Language: a first course in
+computational semantics</a>, CSLI, 2005.
+</li>-->
+      <li> Stuart Russell and Peter Norvig, Artificial Intelligence: A
+        Modern Approach, Global Edition, 2016.</li>
+      <li> Patrick Blackburn, Johan Bos and Kristina Striegnitz: <a
+          href="http://www.learnprolognow.org/"> Learn Prolog Now!</a>,
+        College Publications, 2006. </li>
+      <li> Sebastian Loebner, Understanding Semantics, Second Edition,
+        2013.</li>
+      <li>Kate Kearns, Semantics (Palgrave Modern Linguistics), 2011</li>
+    </lu>
+    <h2>Exams </h2>
+    <p> <b>Please note that the course has changed considerably this
+        year and previous exams should be treated with care. Further
+        guidance will be added here later.</b> </p>
+    Check out the following sites: <br>
+    <ul>
+      <li> <a
+          href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/">General
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          examinations material</a> </li>
+      <li> <a
+href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/studentfaq.php">Exams
+information
+specifically
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          for students</a> </li>
+      <li> <a
+          href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/ug-exams/">Exams
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          feedback</a></li>
+    </ul>
+    <!--
+The most relevant exams are from  <a href="http://studentnet.cs.manchester.ac.uk/assessment/exam_papers/UG_sem2_2010/COMP24412.pdf">2010</a> and
+  <a href="http://studentnet.cs.manchester.ac.uk/assessment/exam_papers/UG_sem2_2013/COMP24412.pdf">2013</a>
+  -- Ian Pratt-Hartmann and I share this course by teaching it in
+  alternate years, so you want to look at past exam papers that I set
+  and not at ones that he did.
+-->
+  </body>
+</html>
