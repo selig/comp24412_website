@@ -1,30 +1,51 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-  <title>COMP24412: Symbolic Artificial Intelligence</title>
-</head>
-<body>
-
-<h1> COMP24412: Symbolic Artificial Intelligence </h1>
-
-This course is being delived by <a href="http://www.cs.man.ac.uk/~regerg/">Giles Reger</a>, <a href="http://andrefreitas.org/">Andre Freitas</a>, and Joe Razavi. 
-Please see <a href="http://studentnet.cs.manchester.ac.uk/syllabus/index.php?code=COMP24412&year=2019">the School syllabus page</a> for other information.
-
-<h2> Aims and objectives </h2>
-The aim of this course is to provide the conceptual and practical (systems building) foundations for knowledge representation and reasoning in Artificial Intelligence.
-
-<p>A student completing this course unit should be able to:</p><ul>
-<li>Describe, differentiate and apply different knowledge representation formalisms for modelling knowledge bases.
-<li>Explain how these formalisms affect the reasoning process.
-<li>Write Prolog programs to solve automated reasoning tasks and explain how they will execute
-<li>Apply, demonstrate and program knowledge-based learning methods.
-<li>Apply, demonstrate and program formal models for natural language processing in the context of semantic parsing and natural logic inference.</li>
-<li>Describe the syntax and semantics of first-order logic and use it to model problems
-<li>Apply reasoning techniques (transformation to clausal form, resolution, saturation) to establish properties of first-order problems
-<li>Explain the theoretical limitations of automated theorem provers
-</ul>
-  <h2> Structure</h2>
-<!--
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <title>COMP24412: Symbolic Artificial Intelligence</title>
+  </head>
+  <body>
+    <h1> COMP24412: Symbolic Artificial Intelligence </h1>
+    This course is being delived by <a
+      href="http://www.cs.man.ac.uk/%7Eregerg/">Giles Reger</a>, <a
+      href="http://andrefreitas.org/">Andre Freitas</a>, and Joe Razavi.
+    Please see <a
+href="http://studentnet.cs.manchester.ac.uk/syllabus/index.php?code=COMP24412&amp;year=2019">the
+      School syllabus page</a> for other information.
+    <h2> Aims and objectives </h2>
+    The aim of this course is to provide the conceptual and practical
+    (systems building) foundations for knowledge representation and
+    reasoning in Artificial Intelligence.
+    <p>A student completing this course unit should be able to:</p>
+    <ul>
+      <li>Describe, differentiate and apply different knowledge
+        representation formalisms for modelling knowledge bases.
+      </li>
+      <li>Explain how these formalisms affect the reasoning process.
+      </li>
+      <li>Write Prolog programs to solve automated reasoning tasks and
+        explain how they will execute
+      </li>
+      <li>Apply, demonstrate and program knowledge-based learning
+        methods.
+      </li>
+      <li>Apply, demonstrate and program formal models for natural
+        language processing in the context of semantic parsing and
+        natural logic inference.</li>
+      <li>Describe the syntax and semantics of first-order logic and use
+        it to model problems
+      </li>
+      <li>Apply reasoning techniques (transformation to clausal form,
+        resolution, saturation) to establish properties of first-order
+        problems
+      </li>
+      <li>Explain the theoretical limitations of automated theorem
+        provers
+      </li>
+    </ul>
+    <h2> Structure</h2>
+    <!--
 <blockquote>
   <h3>Automated Reasoning: 3 weeks</h3>
   <blockquote>
@@ -37,92 +58,213 @@ The aim of this course is to provide the conceptual and practical (systems build
   <h3>Natural Language: 1 week</h3>
 </blockquote>
 -->
-
-<p>Lecture and Lab notes and materials will be available from here. As per School policy, we will not be providing hard copies of notes.</p>
-
-<p>The following table is the main reference for what is going on in the course and will be updated frequently throughout the course as further details are given.</p>
-
-<p>The suggested reading will be mainly taken from Artificial Intelligence: A Modern Approach (Third Edition) referenced as AIAMA. It should be noted that this is suggested only and not examinable (only lectured material is examinable).</p>
-
-
-<TABLE BORDER=1 cellpadding="7" style="width: 100%">
-  <colgroup>
-       <col span="1" style="width: 5%;">
-       <col span="1" style="width: 30%;">
-       <col span="1" style="width: 25%;">
-       <col span="1" style="width: 30%;">
-       <col span="1" style="width: 10%;">
-    </colgroup>
-
-<TH>week<TH>Lectures<TH>Suggested Reading<TH>Labs<TH>Quiz</TH>
-<TR> <TH ROWSPAN=2>1 (Andre) 	<TD> Introduction <TD> Chapter 1 of AIAMA
-<TR> 				<TD> Knowledge Representation <TD>
-<TR> <TH ROWSPAN=2>2 (Andre)	<TD> Knowledge Representation<TD><TD ROWSPAN=4>Lab 1: Modelling
-<TR> 				<TD> Knowledge Representation<TD> 
-<TR> <TH ROWSPAN=2>3 (Joe)	<TD> Prolog<TD> 
-<TR> 				<TD> Prolog<TD> 
-<TR> <TH ROWSPAN=2>4 (Joe)	<TD> Prolog<TD><TD ROWSPAN=4>Lab 2: Prolog 
-<TR> 				<TD> Prolog<TD> 
-<TR> <TH ROWSPAN=2>5 (Andre)	<TD> Parsing<TD><TD ROWSPAN=2>Quiz 1: Prolog 
-<TR> 				<TD> Parsing<TD> 
-<TR> <TH ROWSPAN=2>6 (Andre)	<TD> Parsing<TD><TD ROWSPAN=4>Lab 3: Parsing 
-<TR> 				<TD> Parsing<TD> 
-<TR> <TH ROWSPAN=2>7 (Giles) 	<TD> Reasoning Tasks<TD><TD ROWSPAN=2>Quiz 2: Parsing 
-<TR> 				<TD> Revising First-Order Logic<TD> 
-<TR> <TH ROWSPAN=2>8 (Giles)	<TD> Working with Clauses<TD><TD ROWSPAN=4>Lab 4: Reasoning in Prolog 
-<TR> 				<TD> Forward and Backward Chaining<TD> 
-<TR> <TH ROWSPAN=2>9 (Giles)	<TD> Unification and Resolution<TD> 
-<TR> 				<TD> Proof Search<TD> 
-<TR> <TH ROWSPAN=2>10 (Giles)	<TD> Proof Search<TD><TD ROWSPAN=4>Lab 5: Reasoning in FOL<TD ROWSPAN=2>Quiz 3: Reasoning 
-<TR> 				<TD> Reasoning with Arithmetic (and beyond)<TD> 
-<TR> <TH ROWSPAN=2>11 (Andre)	<TD> Abduction and ILP<TD> 
-<TR> 				<TD> Abduction and ILP<TD> 
-<TR> <TH ROWSPAN=2>12 		<TD>Revision <TD> 
-
-</TABLE>
-
-<h2> Reading </h2>
-<lu>
-<!--<li> Patrick Blackburn &amp; Johan Bos: <a href="http://www.coli.uni-saarland.de/publikationen/softcopies/Blackburn:1997:RIN.pdf">
+    <p>Lecture and Lab notes and materials will be available from here.
+      As per School policy, we will not be providing hard copies of
+      notes.</p>
+    <p>The following table is the main reference for what is going on in
+      the course and will be updated frequently throughout the course as
+      further details are given.</p>
+    <p>The suggested reading will be mainly taken from Artificial
+      Intelligence: A Modern Approach (Third Edition) referenced as
+      AIAMA. It should be noted that this is suggested only and not
+      examinable (only lectured material is examinable).</p>
+    <table style="width: 100%" cellpadding="7" border="1">
+      <colgroup> <col style="width: 5%;" span="1"> <col style="width:
+          30%;" span="1"> <col style="width: 25%;" span="1"> <col
+          style="width: 30%;" span="1"> <col style="width: 10%;"
+          span="1"> </colgroup>
+      <tbody>
+        <tr>
+          <th>week</th>
+          <th>Lectures</th>
+          <th>Suggested Reading</th>
+          <th>Labs</th>
+          <th>Quiz</th>
+        </tr>
+        <tr>
+          <th rowspan="2">1 (Andre) </th>
+          <td> Introduction (<a
+href="http://andrefreitas.org/symbolic_ai/2020/slides//Symbolic%20AI%202020%20Lecture%201.pdf">slides</a>)</td>
+          <td> Chapter 1 of AIAMA
+          </td>
+        </tr>
+        <tr>
+          <td> Knowledge Representation </td>
+          <td>
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">2 (Andre) </th>
+          <td> Knowledge Representation</td>
+          <td><br>
+          </td>
+          <td rowspan="4">Lab 1: Modelling
+          </td>
+        </tr>
+        <tr>
+          <td> Knowledge Representation</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">3 (Joe) </th>
+          <td> Prolog</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <td> Prolog</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">4 (Joe) </th>
+          <td> Prolog</td>
+          <td><br>
+          </td>
+          <td rowspan="4">Lab 2: Prolog </td>
+        </tr>
+        <tr>
+          <td> Prolog</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">5 (Andre) </th>
+          <td> Parsing</td>
+          <td><br>
+          </td>
+          <td rowspan="2">Quiz 1: Prolog </td>
+        </tr>
+        <tr>
+          <td> Parsing</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">6 (Andre) </th>
+          <td> Parsing</td>
+          <td><br>
+          </td>
+          <td rowspan="4">Lab 3: Parsing </td>
+        </tr>
+        <tr>
+          <td> Parsing</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">7 (Giles) </th>
+          <td> Reasoning Tasks</td>
+          <td><br>
+          </td>
+          <td rowspan="2">Quiz 2: Parsing </td>
+        </tr>
+        <tr>
+          <td> Revising First-Order Logic</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">8 (Giles) </th>
+          <td> Working with Clauses</td>
+          <td><br>
+          </td>
+          <td rowspan="4">Lab 4: Reasoning in Prolog </td>
+        </tr>
+        <tr>
+          <td> Forward and Backward Chaining</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">9 (Giles) </th>
+          <td> Unification and Resolution</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <td> Proof Search</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">10 (Giles) </th>
+          <td> Proof Search</td>
+          <td><br>
+          </td>
+          <td rowspan="4">Lab 5: Reasoning in FOL</td>
+          <td rowspan="2">Quiz 3: Reasoning </td>
+        </tr>
+        <tr>
+          <td> Reasoning with Arithmetic (and beyond)</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">11 (Andre) </th>
+          <td> Abduction and ILP</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <td> Abduction and ILP</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">12 </th>
+          <td>Revision </td>
+          <td> <br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2> Reading </h2>
+    <lu>
+      <!--<li> Patrick Blackburn &amp; Johan Bos: <a href="http://www.coli.uni-saarland.de/publikationen/softcopies/Blackburn:1997:RIN.pdf">
 Representation and Inference for Natural Language: a first course in
 computational semantics</a>, CSLI, 2005.
 </li>-->
-<li> Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach, Global Edition, 2016.</li>
-<li> Patrick Blackburn, Johan Bos and Kristina Striegnitz: <a href="http://www.learnprolognow.org/">
-Learn Prolog Now!</a>, College Publications, 2006.
-</li>
-<li> Sebastian Löbner, Understanding Semantics, Second Edition, 2013.</li>
-
-<li>Kate Kearns, Semantics (Palgrave Modern Linguistics), 2011</li>
-
-</lu>
-
-
-<h2>Exams </h2>
-<p>
-<b>Please note that the course has changed considerably this in 2018/19 and previous exams should be treated with care - they are not indicative of content or style. </b>
-</p>
-Check out the following sites: <br>
-  <ul>
-    <li> <a href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/">General
-examinations
-material</a>
-    </li>
-    <li> <a href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/studentfaq.php">Exams
+      <li> Stuart Russell and Peter Norvig, Artificial Intelligence: A
+        Modern Approach, Global Edition, 2016.</li>
+      <li> Patrick Blackburn, Johan Bos and Kristina Striegnitz: <a
+          href="http://www.learnprolognow.org/">
+          Learn Prolog Now!</a>, College Publications, 2006.
+      </li>
+      <li> Sebastian Loebner, Understanding Semantics, Second Edition,
+        2013.</li>
+      <li>Dennis Merritt, Building Expert Systems in Prolog.<br>
+      </li>
+    </lu>
+    <h2>Exams </h2>
+    <p>
+      <b>Please note that the course has changed considerably this in
+        2018/19 and previous exams should be treated with care - they
+        are not indicative of content or style. </b>
+    </p>
+    Check out the following sites: <br>
+    <ul>
+      <li> <a
+          href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/">General
+          examinations
+          material</a> </li>
+      <li> <a
+href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/studentfaq.php">Exams
 information
-specifically for students</a>
-    </li>
-    <li> <a href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/ug-exams/">Exams
-feedback</a></li>
-  </ul>
-<!--
+specifically
+          for students</a> </li>
+      <li> <a
+          href="http://intranet.cs.man.ac.uk/Study_subweb/Ugrad/exams/ug-exams/">Exams
+          feedback</a></li>
+    </ul>
+    <!--
 The most relevant exams are from  <a href="http://studentnet.cs.manchester.ac.uk/assessment/exam_papers/UG_sem2_2010/COMP24412.pdf">2010</a> and
   <a href="http://studentnet.cs.manchester.ac.uk/assessment/exam_papers/UG_sem2_2013/COMP24412.pdf">2013</a>
   -- Ian Pratt-Hartmann and I share this course by teaching it in
   alternate years, so you want to look at past exam papers that I set
   and not at ones that he did.
 -->
-
-
-
-</body></html>
+  </body>
+</html>
